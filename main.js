@@ -24,12 +24,24 @@ console.log(agegap);
 // Exercise 5
 if (age < juliaAge) {
     agegap2 = "Julia is older than you"
-} else if (age = juliaAge) {
+} else if (age == juliaAge) {
     agegap2 = "You have the same age as Julia"
 } else {
     agegap2 = "Julia is younger than you"
 }
 console.log(agegap2);
+// 
+//  Exercise 6
+const names = ["Raúl", "Emily", "Lucas", "Jost", "Muayad", "Ali", "Fernando"]
+console.log(names[0]);
+console.log(names[6]);
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+//  if i smaller than names.length i++ (+1 each for each loop) {clg names[i]}
+// 
+// Exercise 7
+const ages = [32, 38, 28]
 
 
 
