@@ -41,7 +41,23 @@ for (let i = 0; i < names.length; i++) {
 //  if i smaller than names.length i++ (+1 each for each loop) {clg names[i]}
 // 
 // Exercise 7
-const ages = [32, 38, 28]
+//  "const i = 0 didnt work, cant assign to const variable"
+// (% = modulus operator) devide by the numbers, if the remain is 0 its even  if uneven there is always 1 leftover
+const ages = [31, 38, 28]
+let i = 0;
+
+while (i < ages.length) {
+    if (ages[i] % 2 === 0)
+    console.log(ages[i]);
+    i++;
+}
+
+for (let i = 0; i < ages.length; i++) {
+    if (ages[i] % 2 === 0)
+    console.log(ages[i]);
+    
+}
+// fix tmr
 
 
 
