@@ -1,6 +1,6 @@
 console.log("the first war aginst javascript....");
 // Exercise 1
-let myName = "Max";
+const myName = "Max";
 console.log(myName);
 // 
 //  Exercise 2
@@ -180,11 +180,50 @@ console.log(answer6);
 // 
 // Exercise 15
 
+const exercise15Array = [13, 56, 74, 73, 90, 70, 33]
+function lowest() {
+    min = exercise15Array[0]
+    for (let i = 0; i < exercise15Array.length; i++) {
+        if (exercise15Array[i] < min)
+            min = exercise15Array[i];
+    }
+    console.log("the smallest number is",min);
 
+}
 
+lowest(exercise15Array[i]);
+// create fuction to search for lowest number in array
+// start with declaring min as exercise15Array[0] that means min start as number 13
+// then we created a for loop that runs as long as we have numbers left cuz of the i++
+// in the while loop we add a condition 
+// if the current number (exercise15Array[i]) is smaller than the min, min = exercise15Array[i])
+// console.log(min); and call for the fuction "lowest(exercise15Array[i]"
+// 
+// Exercise 16
+const exercise16Array = [13, 516, 743, 77, 9, 1370, 323, 17]
 
+function highest() {
+    max = exercise16Array[0]
+    for (let i = 0; i < exercise16Array.length; i++) {
+        if (exercise16Array[i] > max)
+            max = exercise16Array[i];
+    }
+    console.log("the highest number is", max);
+}
+highest(exercise16Array[i]);
+// same thing except thaz in the if condition we change the "<" to ">" to get the highest number and not the smaller
+// 
+// Exercise 17
 
+const array17 = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+const index = 1;
 
+function findArrayIndex(array17, index) {
+    console.log(array17.at(index) ?? "index is undefined");
+}
+findArrayIndex(array17, 15);
+// Array.at() method allows you to access an element in an array at a specific index, works similiar to (arr[index])
+//  supports negative indices, modern addition to javascript
 
 
 
@@ -218,5 +257,41 @@ console.log(answer6);
 // colors[4] = 1;
 // console.log(colors);
 
+
+// const loopingArray = [231, 312, 221, 134, 64, 342]
+// for (let i = 0; i < loopingArray.length; i++) {
+//     summary += loopingArray[i];
+
+// }
+// console.log(summary);
+
+// function idkidk(a, b) {
+//     let result = a * b;
+//     console.log(result);
+// }
+// idkidk(2, 3)
+// idkidk(5, 9)
+// idkidk(8, 90)
+// function loopinglow() {
+//     let low = loopingArray[0];
+//     for (let i = 0; i < loopingArray.length; i++){
+//         if (loopingArray[i] < low)
+//             low = loopingArray[i];
+//     }
+//     console.log(low);
+// }
+// loopinglow(loopingArray[i]);
+
+// function xy(x, y) {
+//     let result = x / y;
+//     console.log(result);
+// }
+// xy(7283231232, 9)
+
+// const loopArray = [7, 23, 5, 3, 1]
+// for (let i = 0; i < loopArray.length; i++){
+//     summary += loopArray[i];
+// console.log(result);
+// }
 
 
