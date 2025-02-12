@@ -224,14 +224,53 @@ function findArrayIndex(array17, index) {
 findArrayIndex(array17, 15);
 // Array.at() method allows you to access an element in an array at a specific index, works similiar to (arr[index])
 //  supports negative indices, modern addition to javascript
+// 
+// Exercise 18
+const myColor = ["Red", "Green", "White", "Black"];
+function arrayToString() {
+    return myColor.join(" ");
+    
+}
+console.log(arrayToString(myColor));
+// The join() method comb all elements of the array into a single string
+// separated by the specified separator (in this case, a space " ").
+// 
+// Exercise 19
+let x = 34423
+function reverseNumber() {
+    let reverseNum = 0;
+    while (x != 0) {
+        reverseNum = reverseNum * 10 + (x % 10); //0*10+(34423 % 10)=>3 // 3*10+(3442 % 10)=>30+2=32 // 32*10+(344 % 10)=>320+4= 324 // 324*10+(34 % 10)=> 3240+4=3244 // 3244*10+(3 % 10)=> 32440+3= 32440 FINAL RESULT afterwards it goes into math.floor 3/10= 0(,3) x(now 0) != 0 so it returns the result
+        x = Math.floor(x / 10); //34423/10=3442(,3removed) when it reach last number it end on 0(.3) then goes into while loop (0 != 0) = wrong and go to the return to print the reverse number result
+    }
+    return reverseNum;
+}
+console.log(reverseNumber(x));
+// 
+// math.floor takes the number after the dot away after the / 10 example: 54321 / 10 = 5432.1 takes it away 
+// 
+// Exercise 20
 
+const wm = "webmaster";
+function reverseWebmaster(str) {
+    return str.split("").sort().join("");
+}
 
-
-
-
-
-
-
+console.log(reverseWebmaster(wm));
+// str is placeholder for whatever string you pass into the function
+// split('') method breaks string into an array of individual characters
+// sort() – Arrange Characters in Order
+// join('') joins all elements together in 1 string without seperation
+// return send final result back
+// 
+// Exercise 21
+const wdt = "Web Development Tutorial";
+function findLongestWord() {
+    const longestWord = 0;
+    for (let i = 0; i < wdt.length; i++){
+        
+    }
+}
 
 
 
@@ -294,4 +333,44 @@ findArrayIndex(array17, 15);
 // console.log(result);
 // }
 
+// unction highest() {
+//     max = exercise16Array[0]
+//     for (let i = 0; i < exercise16Array.length; i++) {
+//         if (exercise16Array[i] > max)
+//             max = exercise16Array[i];
+//     }
+//     console.log("the highest number is", max);
+// }
+// highest(exercise16Array[i]);
 
+// const highArr = [1, 2, 6, 98, 64, 322, 545675, 72322377]
+// function findHighest() {
+//     max = highArr[0];
+//     for (let i = 0; i < highArr.length; i++){
+//         if (highArr[i] > max)
+//             max = highArr[i];
+//     }
+//     console.log(max);
+// }
+// findHighest(highArr[i]);
+
+// const lowArr = [65, 6756, 4353, 22, 423, 121]
+// function findLowArr() {
+//     min = lowArr[0];
+//     for (let i = 0; i < lowArr.length; i++){
+//         if (lowArr[i] < min)
+//             min = lowArr[i];
+//     }
+//     console.log(min);
+// }
+// findLowArr(lowArr[i]);
+// let y = 7732890192883092;
+// function reverseIt() {
+//     let reverseItNum = 0;
+//     while (y != 0) {
+//         reverseItNum = reverseItNum * 10 + (y % 10);
+//         y = Math.floor(y / 10);
+//     }
+//     return reverseItNum;
+// }
+// console.log(reverseIt(y));
