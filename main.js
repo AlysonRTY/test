@@ -35,6 +35,10 @@ console.log(agegap2);
 const names = ["Raúl", "Emily", "Lucas", "Jost", "Muayad", "Ali", "Fernando"]
 console.log(names[0]);
 console.log(names[6]);
+// const lastname2 = names.pop();
+// const lastname2 = names.slice(-1); other methods to target the last item on a array
+// console.log(lastname2);
+
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
@@ -134,6 +138,7 @@ console.log(answer2);
 
 let answer3 = twoParameters(13, 3);
 console.log(answer3);
+// console.log(twoParameters(13, 2));
 // wrote function with two parameters (x, y) added return which multiplies the 2 numbers
 //  called the answers in the main program (6, 49, 39)
 // 
@@ -183,7 +188,7 @@ console.log(answer6);
 const exercise15Array = [13, 56, 74, 73, 90, 70, 33]
 function lowest() {
     min = exercise15Array[0]
-    for (let i = 0; i < exercise15Array.length; i++) {
+    for (let i = 1; i < exercise15Array.length; i++) {
         if (exercise15Array[i] < min)
             min = exercise15Array[i];
     }
@@ -192,6 +197,7 @@ function lowest() {
 }
 
 lowest(exercise15Array[i]);
+// for (let = 1;) not (let = 0;) otherwise it just comepare the first number to the same number which doesnt make sense
 // create fuction to search for lowest number in array
 // start with declaring min as exercise15Array[0] that means min start as number 13
 // then we created a for loop that runs as long as we have numbers left cuz of the i++
@@ -264,13 +270,67 @@ console.log(reverseWebmaster(wm));
 // return send final result back
 // 
 // Exercise 21
-const wdt = "Web Development Tutorial";
-function findLongestWord() {
-    const longestWord = 0;
-    for (let i = 0; i < wdt.length; i++){
-        
+function longestWord(string) {
+    const array = string.split(" ");
+    let longest = 0;
+    let index = 0;
+    for (i = 0; i < array.length; i++){
+        if (array[i].length > longest) {
+            longest = array[i].length;
+            index = i;
+        }
     }
+    console.log(array[index]);
 }
+longestWord("Web Development Tutorial");
+//split (" ") split array of words example: "Web Development Tutorial" ==> ["Web", "Development", "Tutorial"]
+// longest used to track the longest word found so far / index used to store the position of the word in the array
+//  loop checks each for its length, if a word > than longest than gonna replace old longest tillt eh end and the index will hold the position of the word in the array
+
+
+
+
+
+
+
+// 
+// Exercise 22
+
+function replaceA(string) {
+    console.log("replaceA: ", string.replaceAll("a", "1"));
+}
+replaceA("Javascript");
+// string parameter method, replaceAll("a", "1") replaces all occurrences of the letter "a" in the string with the number "1"
+// 
+// Exercise 23
+function capitalize(string) {
+  let capitalized = ""; // Initialize an empty string to store the result
+  for (let i = 0; i < string.length; i++) { // Loop through each character in the string
+    if (i === 0) { // Check if it's the first character of the string
+      capitalized = string[i].toUpperCase(); // Capitalize the first character
+    } else if (string[i - 1] === " ") { // Check if the previous character was a space
+      capitalized = capitalized + string[i].toUpperCase(); // Capitalize the current character
+    } else {
+      capitalized += string[i]; // Otherwise, add the character as is
+    }
+  }
+  console.log("capitalized: ", capitalized); // Print the result
+}
+capitalize("prince of persia"); // Call the function
+
+
+
+
+
+
+
+
+
+
+
+// Exercise 26
+var dupArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+
 
 
 
