@@ -317,20 +317,52 @@ function capitalize(string) {
   console.log("capitalized: ", capitalized); // Print the result
 }
 capitalize("prince of persia"); // Call the function
+// 
+// 
+// Exercise 24
+function findEvenNumbers(even) {
+    const evenNum = [];
+    for (let i = 0; i < even; i++){
+        if (i % 2 === 0)
+            evenNum.push(i);
+    }
+   
+console.log(even, evenNum);
 
+}
+findEvenNumbers(15);
+// An empty array named evenNum is created. This will store all the even numbers we find.
+// for loop to iterate through the number that gonna get added, inside loop % operator checks if current number i is even, if i is even its added to the evenNum array using the push() method
+// 
+// Exercise 25
 
-
-
-
-
-
-
-
-
+function findOddNumbers(a, b) {
+    const OddNum = []; // Array to store odd numbers
+    for (let i = a; i < b; i++){ // Loop from a to b
+        if (i % 2 === 1) // Check if the number is odd
+            OddNum.push(i); // Add the odd number to the array
+    }
+    console.log(OddNum);
+}
+findOddNumbers(1, 13);
+// 
+// 
+// 
 
 // Exercise 26
-var dupArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+// var dupArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+// function findDuplicate() {
+//     const duplicates = []
+//     for (let i = 0; i < dupArray.length; i++)
+//         for (let j = i + 1; j < dupArray.length; j++) {
+//             if (dupArray[i] === dupArray[j]) {
+//                 duplicates.push(dupArray[i]);
+//             }
+//             console.log(duplicates);
+//     }
 
+// }
+// findDuplicate(dupArray);
 
 
 
