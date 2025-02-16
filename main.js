@@ -350,19 +350,19 @@ findOddNumbers(1, 13);
 // 
 
 // Exercise 26
-// var dupArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
-// function findDuplicate() {
-//     const duplicates = []
-//     for (let i = 0; i < dupArray.length; i++)
-//         for (let j = i + 1; j < dupArray.length; j++) {
-//             if (dupArray[i] === dupArray[j]) {
-//                 duplicates.push(dupArray[i]);
-//             }
-//             console.log(duplicates);
-//     }
-
-// }
-// findDuplicate(dupArray);
+var dupArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+function findDuplicate() {
+    const duplicates = [];
+    for (let i = 0; i < dupArray.length; i++)
+        for (let j = i + 1; j < dupArray.length; j++) {
+            if (dupArray[i] === dupArray[j]) {
+                duplicates.push(dupArray[i]);
+            }
+            
+    }
+console.log(duplicates);
+}
+findDuplicate(dupArray);
 
 
 
